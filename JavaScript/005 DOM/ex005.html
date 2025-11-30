@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciando o DOM</title>
+    <style>
+        body {
+            background-color: rgb(103, 172, 233);
+            font: normal 15pt; color: aliceblue; font-family: Arial, Helvetica, serif;
+        }
+        #area {
+            background-color: rgb(220, 220, 143);
+            color:rgb(72, 118, 72);
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando os estudos com DOM</h1>
+    <p>
+        Aqui vamos aprender sobre o <strong>DOM</strong> no JavaScript!
+    </p>
+    <div id="area">
+        Descubra seu nome!
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clicar(){
+            a.innerHTML = 'Rogério Tavares'
+            a.style.background = 'red'
+            a.style.color = 'white'
+        }
+        function entrou(){
+            a.innerHTML = 'entrou!'
+            a.style.background = 'blue'
+            a.style.color = 'orange'
+        }
+        function saiu(){
+            a.innerHTML = 'saiu!'
+            a.style.background = 'black'
+            a.style.color = 'white'
+        }
+    </script>
+</body>
+</html>

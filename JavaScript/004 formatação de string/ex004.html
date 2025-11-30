@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Strings</title>
+    <style>
+        body {
+            font: normal 29px arial;
+            background-color:rgb(212, 143, 241);
+            color: rgb(236, 234, 234);
+        }
+    </style>
+</head>
+<body>
+    <script>
+       var nome = prompt('Olá! Qual o seu nome?')
+        //declarar uma variável já faz com que o dado seja guardado para uso futuro.
+       document.write(` Olá, ${nome}, tudo bem? <br/>` )
+       document.write(` Seu nome possui ${nome.length} letras! <br/>`)
+       document.write(` Em MAIÚSCULO seu nome fica ${nome.toUpperCase()} <br/>`)
+       document.write(` Em minúsculo fica ${nome.toLowerCase()} <br/>`)
+       // <br/> faz uma quebra de linha
+    </script>
+</body>
+</html>

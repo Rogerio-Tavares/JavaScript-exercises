@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number</title>
+</head>
+<body>
+    <h1>COLOCANDO EM PRÁTICA O JAVA SCRIPT</h1>
+
+    <h2>Transformando String em Number</h2>
+
+    <p>
+       Para realizar a conversão para Number. é necessario usar number.parseInt() fora do window.
+    </p>
+    <p>
+        Há três representações de Number. <br>
+        1-Number.parseFloat(window.prompt(n)) -> decimal <br>
+        2-Number.parseInt(window.prompt(n)) -> inteiro <br>
+        3-Number(prompt(n)) -> a máquina escolhe
+    </p>
+    <p>
+        Usar ${} Deixa o código mais limpo do que a concatenação normal.
+    </p>
+
+    <script> //o script deve ficar ao final do body.
+        var n1 = Number.parseFloat(window.prompt('Digite um decimal ' + n1 + '.'))//Recebe a variável.
+        var n2 = Number.parseInt(window.prompt('Digite um Inteiro ' + n2 + '.'))
+        var n3 = Number(prompt('Digite um qualquer ' + n3 + '.'))
+        //As mauiúsculas e minúsculas devem ser adicionadas corretamente.
+        var s = n1 + n2 + n3
+        window.alert(`O resultado de ${n1}; ${n2} e ${n3} é ${s}`)
+        //Esse modelo de concatenar utiliza crase ao invés de aspas.
+        //O + significa concatenação.
+        //cria um pop-up dando boas vindas.
+    </script>
+</body>
+</html>
