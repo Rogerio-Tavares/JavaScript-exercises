@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de velocidade</title>
+</head>
+<body>
+    <h1>CHECAGEM DE VELOCIDADE</h1>
+    Velocidade do carro: <input type="number" name="txtvl" id="txtvl">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+        
+    </div>
+
+    <script>
+        function calcular(){
+            var txtv = document.getElementById('txtvl')
+            var res = document.getElementById('res')
+            var vel = Number(txtv.value)
+            //cuidar para não colocar ponto na sintaxe abaixo.
+            res.innerHTML = `<p>Sua velocidade é <strong>${vel}Km/h.</strong></p>`
+            if (vel > 60) {
+                //Deve ser "+=" pois concatena ao invés de substituir.
+                res.innerHTML += `Você ultrapassou a velocidade. <strong>MULTADO!</strong>`
+            }
+            res.innerHTML += `<p>Use, sempre, cinto de segurança</p>`
+        }
+    </script>
+</body>
+</html>
