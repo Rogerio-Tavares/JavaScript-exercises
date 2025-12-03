@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>De que país você é?</h1>
+    <input type="text" id="pais">
+    <input type="button" value="verificar" id="checar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar(){
+            var cntr = document.getElementById('pais').value
+            //acima deve estar indicado o valor do campo, não o campo.
+            var res = document.getElementById('res')
+            if (cntr == 'Brasil'|| cntr == 'brasil'){
+                //acima deve-se usar dois símbolos de igualdade par indicar comparação
+                res.innerHTML = `Você é <strong>brasileiro!</strong>`
+            }
+            else{
+                res.innerHTML = `<p>Você é <strong>gringo!</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
