@@ -1,24 +1,25 @@
 body{
-    background-color: rgba(77, 128, 225, 0.983)
+    background-color: rgba(77, 128, 225, 0.983);
+    font: normal 15pt arial;
+    text-align: center;
 }
 
 header{
     text-align: center;
-
+    color: rgb(238, 72, 94);
 }
 
 section{
-    text-align: center;
-}
-
-div{
-    text-align: center;
-}
-
-p{
-    text-align: center;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 15px;
+    width: 500px;
+    margin: auto; /*centraliza a section*/
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.265);
 }
 
 footer{
-    text-align: center;
+    color: rgb(238, 72, 94);
+    font-style: italic;
 }
+
