@@ -1,0 +1,23 @@
+body{
+    background-color: cadetblue;
+    padding: 15px 250px;
+}
+header{
+    text-align: center;
+    color: azure;
+}
+section{
+    text-align: center;
+    background-color: bisque;
+    color: black;
+    padding: 15px;
+    width: 500px;
+    /*isso centraliza a imagem corretamente*/
+    margin: auto;
+    border-radius: 10px;
+    
+}
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}

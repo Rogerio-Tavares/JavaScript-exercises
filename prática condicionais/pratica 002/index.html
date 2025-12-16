@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade e Gênero</h1>
+    </header>
+    <section>
+        <div id="qst">
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <!--manter checked é importante para que obrigue marcar uma opção-->
+                <label for="mas">Masculino</label>
+                <!--O label é um elemento semêntico que auxilia o browser a identificar que ali é um campo de entrada de texto ou número. Ajuda para acessibilidade e para search engining do navegador.-->
+                <input type="radio" name="radsex" id="fem">
+                <!--ambos devem ter o mesmo name para evitar que mais de uma opção seja marcada e não permita retornar.-->
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
+
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
